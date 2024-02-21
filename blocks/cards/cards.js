@@ -97,11 +97,6 @@ export default function decorate(block) {
   block.append(leftWrapper);
   block.append(rightWrapper);
 
-
-  block.querySelector('.cards-thumbnail-button').addEventListener('click', (e)=> {
-    console.log('eeeee', e);
-  });
-
   block.innerHTML = block.innerHTML.replace(/COLLECTION_NAME_PLACEHOLDER/g, collectionName);
   block.innerHTML = block.innerHTML.replace(/COLOR_NAME_PLACEHOLDER/g, `color: ${urlColorMap[currentProductUrl]}`);
 }

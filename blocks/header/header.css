@@ -16,7 +16,7 @@ header nav {
   transition: padding-bottom 0s ease-out,padding-top 0s ease-out 0s;
   margin-top: 0;
   padding: 0 16px;
-  top: 25px;
+  top: 0px;
 }
 
 header nav a:any-link {
