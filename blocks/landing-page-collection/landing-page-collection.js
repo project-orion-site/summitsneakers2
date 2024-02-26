@@ -4,6 +4,9 @@ import { collectionName } from '../../scripts/collection-name.js';
  * @param {HTMLElement} $block
  */
 export default function decorate() {
+  // Update the document title
+  document.title = collectionName;
+
   const originalContainer = document.querySelector('.landing-page-collection.block');
   // Create a new wrapper div
   const leftWrapperDiv = document.createElement('div');
