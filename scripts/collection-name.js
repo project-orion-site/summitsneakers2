@@ -1,1 +1,1 @@
-export const collectionName = 'Jordanshoes 2024';
+export const collectionName = 'Summit Sneakers';
