@@ -28,12 +28,6 @@ const wrap = (element, target) => {
   return wrapper;
 };
 
-const urlColorMap = {
-  "/products/airstrike-elite": 'orange',
-  "/products/airstrike-elite1": 'green',
-  "/products/airstrike-elite2": 'red',
-  "/products/airstrike-elite3": 'blue'
-}
 export default function decorate(block) {
   /* change to ul, li */
 
@@ -98,5 +92,5 @@ export default function decorate(block) {
   block.append(rightWrapper);
 
   block.innerHTML = block.innerHTML.replace(/COLLECTION_NAME_PLACEHOLDER/g, collectionName);
-  block.innerHTML = block.innerHTML.replace(/COLOR_NAME_PLACEHOLDER/g, `color: ${urlColorMap[currentProductUrl]}`);
+  block.innerHTML = block.innerHTML.replace(/COLOR_NAME_PLACEHOLDER/g, 'color: rainbow');
 }
