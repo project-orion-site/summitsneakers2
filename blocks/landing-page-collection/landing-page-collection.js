@@ -55,9 +55,11 @@ export default function decorate() {
   const words = element.textContent.split(' ');
   words[2] = `<i style="font-weight: 100;">${words[2]}</i>`;
   element.innerHTML = words.join(' ');
-  
   //  update custom name
-  console.log("Hello world!");
-  const discountCustomName = document.querySelector("body > main > div > div.sneaker-description-wrapper > div > div:nth-child(1) > div > ul > li:nth-child(1) > ul > li")
-  discountCustomName.textContent.replace('COLLECTION_NAME_PLACEHOLDER', collectionName);
+  const customName = document.getElementById('custom-name');
+  const discountCustomName = document.querySelector('.landing-page-discount > div:nth-child(2) h2');
+  const discountWords = discountCustomName.textContent.split('CUSTOM NAME');
+  discountWords[0] = collectionName;
+  discountCustomName.innerHTML = discountWords.join(' ');
+  customName.innerHTML = collectionName;
 }
