@@ -10493,8 +10493,8 @@
   OF ANY KIND, either express or implied. See the License for the specific language
   governing permissions and limitations under the License.
   */
-  var EDGE = "beta.adobedc.net";
-  var ID_THIRD_PARTY = "beta.adobedc.net";
+  var EDGE = "edge.adobedc.net";
+  var ID_THIRD_PARTY = "edge.adobedc.net";
 
   /*
   Copyright 2023 Adobe. All rights reserved.
