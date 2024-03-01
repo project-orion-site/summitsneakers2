@@ -49,22 +49,27 @@ export default function decorate(block) {
 
   const thumnailsList = document.createElement('ul');
 
-  block.children[0].children[0].querySelectorAll('li').forEach((child) => {
+  block.children[0].children[0].querySelectorAll('li').forEach((child, index) => {
     const picture = child.querySelector('picture');
-    const anchor = document.createElement('a');
+    if(index === 0) {
+      const anchor = document.createElement('a');
 
-    const urlObj = new URL(child.innerText);
-    const pageProductURL = urlObj.href.replace(urlObj.origin, '');
+      const urlObj = new URL(child.innerText);
+      const pageProductURL = urlObj.href.replace(urlObj.origin, '');
 
-    anchor.href = pageProductURL;
-    anchor.className = 'cards-thumbnail-button';
+      anchor.href = pageProductURL;
+      anchor.className = 'cards-thumbnail-button';
 
-    if(currentProductUrl === pageProductURL) {
-      anchor.className='cards-thumbnail-button cards-thumbnail-button--active';
+      if(index === 0) {
+        anchor.className='cards-thumbnail-button cards-thumbnail-button--active';
+      }
+
+      wrap(picture, anchor);
+      thumnailsList.append(anchor);
+    } else {
+      thumnailsList.append(picture)
     }
 
-    wrap(picture, anchor);
-    thumnailsList.append(anchor);
   });
 
   thumbnailsWrapper.append(thumnailsList);

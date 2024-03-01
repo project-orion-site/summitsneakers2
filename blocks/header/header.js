@@ -58,6 +58,13 @@ export default async function decorate(block) {
     });
     nav.prepend(hamburger);
     nav.setAttribute('aria-expanded', 'false');
+
+    const logo = nav.getElementsByClassName('nav-brand')[0];
+
+    logo.addEventListener('click', () => {
+      window.location.href = window.location.origin
+    });
+
     decorateIcons(block);
     block.append(nav);
   }
