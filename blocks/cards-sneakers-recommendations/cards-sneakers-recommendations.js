@@ -4,6 +4,10 @@ import { collectionName } from '../../scripts/collection-name.js';
 export default function decorate(block) {
   /* change to ul, li */
   const ul = document.createElement('ul');
+  const title = document.createElement('div');
+  title.className = 'cards-sneakers-recommendations-title';
+  title.textContent = 'More Shoes That You Might Like';
+
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     const liWrapper = document.createElement('div');
@@ -36,5 +40,6 @@ export default function decorate(block) {
   });
   ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '250' }])));
   block.textContent = '';
+  block.append(title);
   block.append(ul);
 }
