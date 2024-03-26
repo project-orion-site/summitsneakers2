@@ -325,11 +325,15 @@ main .section[data-section-status='initialized'] {
 }
 
 /* cookie consent styles */
-.cc-window.cc-banner.cc-theme-block {
+.cc-window.cc-theme-block {
   padding: 12px 10px;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
+}
+/* #DD175B */
+.cc-window .cc-link {
+  color: #FFF !important;
 }
 
 .cc-highlight .cc-btn.cc-customize, .cc-policies-links.cc-link {
@@ -346,4 +350,5 @@ main .section[data-section-status='initialized'] {
 
 .cc-btn.cc-save {
   padding: 13px 29px;
+  background-color: #DD175B;
 }
