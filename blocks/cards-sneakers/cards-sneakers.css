@@ -1,5 +1,5 @@
 .cards-sneakers-wrapper {
-  max-width: calc(100% - 200px);
+  max-width: calc(100% - 32px);
   margin: auto;
 }
 
@@ -8,8 +8,8 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 60px;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  grid-gap: 20px;
 }
 
 .cards-sneakers > ul > li {
@@ -210,6 +210,15 @@
     .cards-sneakers.scroll > ul > li {
         width: calc(100%/3);
     }
+
+  .cards-sneakers-wrapper {
+    max-width: calc(100% - 200px);
+  }
+
+  .cards-sneakers > ul {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 60px;
+  }
 }
 
 @media (min-width: 1200px) {

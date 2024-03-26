@@ -37,7 +37,7 @@
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  margin-left: 80px;
+  margin-left: 16px;
 }
 
 .rightWrapper {
@@ -47,14 +47,14 @@
 
 .rightWrapper > div:first-child {
   position: absolute;
-  top: -40px;
+  top: -10px;
 }
 
 /*shop btn*/
 .rightWrapper .button-container {
   position: absolute;
-  bottom: 13%;
-  right: 56px;
+  bottom: 3%;
+  right: 16px;
 }
 
 .landing-page-collection .leftWrapper h1 {
@@ -94,7 +94,7 @@
 }
 
 .leftWrapper >div:last-child {
-  margin-top: 80px;
+  margin-top: 15px;
 }
 
 .landing-page-collection .button-container a {
@@ -103,11 +103,11 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  width:  260px;
+  width:  80px;
   border-radius: 300px;
   font-family: 'Adobe Clean';
-  font-size:  18px ;
-  height: 60px;
+  font-size:  10px ;
+  height: 20px;
 }
 
 .landing-page-discount {
@@ -124,14 +124,14 @@
   left: 50%;
   transform: translate(-50%,-10%);
   width: 80%;
-  height: 235px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(6, 6, 6, 0.5);
   border-radius: 29px;
   color: #FFF;
-  font-size: 100px;
+  font-size: 22px;
   font-family: "Adobe Clean";
 }
 
@@ -140,12 +140,53 @@
   color: #FFF;
   top: 10%;
   right: 10%;
-  width: 40%;
+  width: 50%;
 }
 
 .landing-page-discount > div:nth-child(2) h2 {
   font-weight: 100;
   font-family: sans-serif;
-  font-size: 32px;
+  font-size: 12px;
   font-style: italic;
+}
+
+
+@media (min-width: 1000px) {
+  .leftWrapper {
+    margin-left: 80px;
+  }
+
+  .rightWrapper > div:first-child {
+    top: -40px;
+  }
+
+  .rightWrapper .button-container {
+    right: 56px;
+    bottom: 13%;
+  }
+
+  .landing-page-collection .button-container a {
+    width:  260px;
+    border-radius: 300px;
+    font-family: 'Adobe Clean';
+    font-size:  18px ;
+    height: 60px;
+  }
+
+  .leftWrapper >div:last-child {
+    margin-top: 80px;
+  }
+
+  #off-your-first-purchase {
+    font-size: 100px;
+    height: 235px;
+  }
+
+  .landing-page-discount > div:nth-child(2) h2 {
+    font-size: 32px;
+  }
+
+  .landing-page-discount > div:nth-child(2) {
+    width: 40%;
+  }
 }

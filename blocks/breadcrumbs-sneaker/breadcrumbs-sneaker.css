@@ -27,4 +27,11 @@
   flex-direction: row;
   align-items: center;
   letter-spacing: 2px;
+  font-size: 14px;
+}
+
+@media (min-width: 900px) {
+  .breadcrumbs-sneaker-wrapper li {
+    font-size: 22px;
+  }
 }

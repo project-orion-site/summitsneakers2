@@ -2,17 +2,14 @@
 
 footer .customer-support {
   background: white;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 footer .columns.info {
   background-color: #4B4B4B;
   color: #E3E3E3;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 16px;
 }
 
 .footer .columns.info > div {
@@ -28,7 +25,7 @@ footer .columns.info h3 {
 
 footer .columns.info > div > div > ul {
   list-style: none;
-  margin: 0;
+  margin-top: 10px;
   padding-inline-start: 0;
   display: flex;
   flex-direction: column;
@@ -46,9 +43,9 @@ footer .columns.info #payment-info + p > picture > img {
 footer .columns.info > div > div > ul > li {
   display: block;
   color: #E3E3E3;
-  font-size: 1rem;
+  font-size: 0.5rem;
   text-transform: uppercase;
-  padding-top: 10px;
+  padding-top: 5px;
   text-decoration: none;
 }
 
@@ -70,26 +67,25 @@ footer .columns.info #follow-us + ul > li {
 }
 
 .footer .columns.info a {
-  font-size: 1.5rem;
+  font-size: 0.7rem;
   color: #E3E3E3;
 }
 
 .footer .columns.info svg {
   fill: #E3E3E3;
+  width: 12px;
+  height: 12px;
 }
 
 footer .copywright {
   background-color: #000000;
   color: #FFFFFF;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 6px;
 }
 
 .footer .copywright > div > div {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   grid-template-rows: auto;
 }
 
@@ -100,17 +96,16 @@ footer .copywright ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 16px;
+  gap: 4px;
 }
 
 footer .copywright ul:last-child {
-  margin: auto;
-  gap: 32px;
+  display: none;
 }
 
 footer .copywright li {
   display: block;
-  font-size: 1rem;
+  font-size: 0.5rem;
   text-decoration: none;
 }
 
@@ -119,4 +114,53 @@ footer .copywright strong {
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: bolder;
+}
+
+
+@media (min-width: 900px) {
+  footer .customer-support {
+    padding: 0 60px
+  }
+
+  footer .columns.info {
+    padding: 32px 60px;
+  }
+
+  footer .columns.info > div > div > ul > li {
+    font-size: 1rem;
+    padding-top: 10px;
+  }
+
+  .footer .columns.info a {
+    font-size: 1.5rem;
+  }
+
+  footer .columns.info > div > div > ul {
+    margin: 0;
+  }
+
+  .footer .columns.info svg {
+    width: unset;
+    height: unset;
+  }
+
+  footer .copywright li {
+    font-size: 1rem;
+  }
+
+  footer .copywright ul:last-child {
+    gap: 32px;
+  }
+
+  footer .copywright ul {
+    gap: 16px;
+  }
+
+  footer .copywright {
+    padding: 24px 60px;
+  }
+
+  .footer .copywright > div > div {
+    grid-template-columns: 50% 50%;
+  }
 }

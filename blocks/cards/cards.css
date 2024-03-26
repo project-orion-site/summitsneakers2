@@ -4,11 +4,12 @@
 
 .cards {
     display: flex;
-    gap: 130px;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .cards .cards-info, .cards .cards-details {
-    width: 50%;
+    width: 100%;
 }
 
 .cards .cards-info {
@@ -104,6 +105,17 @@
     fill: #FFD802;
     width: 44px;
     height: 44px;
+}
+
+@media (min-width: 900px) {
+    .cards {
+        flex-direction: row;
+        gap: 130px;
+    }
+
+    .cards .cards-info, .cards .cards-details {
+        width: 50%;
+    }
 }
 
 @media (max-width: 1200px) {

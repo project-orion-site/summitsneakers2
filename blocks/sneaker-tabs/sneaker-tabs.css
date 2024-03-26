@@ -27,7 +27,7 @@
   flex-direction: row;
   align-items: center;
   letter-spacing: 2px;
-  font-size: 16px;
+  font-size: 10px;
   color: #AAAAAA;
 }
 
@@ -36,9 +36,19 @@
 }
 
 .sneaker-tabs-wrapper .sneaker-tabs-divider {
-  width: 160px;
-  height: 5px;
-  background-color: #000000;
-  position: relative;
-  top: 28px;
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .sneaker-tabs-wrapper .sneaker-tabs-divider {
+    width: 160px;
+    height: 5px;
+    background-color: #000000;
+    position: relative;
+    top: 28px;
+  }
+
+  .sneaker-tabs-wrapper li {
+    font-size: 16px;
+  }
 }
